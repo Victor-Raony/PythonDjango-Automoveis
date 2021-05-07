@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+        {% endblock %}
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="navbar navbar-default">
+            <dev class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand">Veiculos Usados</a>
+                </div>
+                <div class="collape navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Carros</a></li>
+                        <li><a href="#">Motos</a></li>
+                        <li><a href="#">Todos</a></li>
+                    </ul>
+                </div>
+            </dev>
+        </div>
+    </nav>
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>
